@@ -3,7 +3,7 @@ name: WordPress Coding Standards Check
 on: [push, pull_request]
 
 jobs:
-  phpcs:
+  wpcs:
     runs-on: ubuntu-latest
 
     steps:
