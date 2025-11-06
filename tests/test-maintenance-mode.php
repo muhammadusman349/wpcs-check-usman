@@ -1,10 +1,10 @@
 <?php
-/** Simple test for maintenance mode concept */
+/** simple test for maintenance mode concept */
 
 class Test_Maintenance_Mode extends WP_UnitTestCase {
 
     public function test_user_access_logic() {
-        // Test user role logic - this will pass
+        // Test 1: User role logic
         wp_set_current_user(0);
         $this->assertFalse(is_user_logged_in(), 'Anonymous users are not logged in');
 
@@ -14,7 +14,7 @@ class Test_Maintenance_Mode extends WP_UnitTestCase {
     }
 
     public function test_maintenance_concept() {
-        // Test the logical concept
+        // Test 2: Maintenance concept
         $maintenance_enabled = true;
         $user_is_admin = false;
         
